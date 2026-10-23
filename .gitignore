@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Datos reales de pacientes: NUNCA subirlos (son datos de salud)
+data/pacientes.txt
+respaldo_*.txt
+*.tmp
