@@ -12,10 +12,12 @@ Algoritmo ProgramaPrincipal
 		Escribir "1. Registrar paciente"
 		Escribir "2. Buscar por DNI"
 		Escribir "3. Buscar por apellido"
-		Escribir "4. Listar ordenados por apellido"
-		Escribir "5. Actualizar medidas de un paciente"
-		Escribir "6. Crear copia de respaldo"
-		Escribir "7. Guardar y salir"
+		Escribir "4. Buscar por fecha de visita"
+		Escribir "5. Listar ordenados por apellido"
+		Escribir "6. Actualizar medidas de un paciente"
+		Escribir "7. Corregir datos personales de un paciente"
+		Escribir "8. Crear copia de respaldo"
+		Escribir "9. Guardar y salir"
 		Escribir "Elija una opcion:"
 		Leer opcion
 		
@@ -27,17 +29,21 @@ Algoritmo ProgramaPrincipal
 			3:
 				Escribir "Buscar por apellido: todas las coincidencias (algoritmo BuscarPorApellido)."
 			4:
-				Escribir "Listar ordenados por apellido: metodo de burbuja (algoritmo OrdenarBurbuja)."
+				Escribir "Buscar por fecha de visita: todas las coincidencias (algoritmo BuscarPorFecha)."
 			5:
-				Escribir "Actualizar medidas de un paciente que vuelve (algoritmo ActualizarMedidas)."
+				Escribir "Listar ordenados por apellido: metodo de burbuja (algoritmo OrdenarBurbuja)."
 			6:
-				Escribir "Crear copia de respaldo en la carpeta indicada (por ejemplo, una USB)."
+				Escribir "Actualizar medidas de un paciente que vuelve (algoritmo ActualizarMedidas)."
 			7:
+				Escribir "Corregir DNI, nombre, edad o telefono (algoritmo CorregirDatosPersonales)."
+			8:
+				Escribir "Crear copia de respaldo en la carpeta indicada (algoritmo CrearRespaldo)."
+			9:
 				Escribir "Guardando los pacientes en el archivo..."
 			De Otro Modo:
-				Escribir "Opcion invalida. Elija un numero del 1 al 7."
+				Escribir "Opcion invalida. Elija un numero del 1 al 9."
 		FinSegun
-	Hasta Que opcion = 7
+	Hasta Que opcion = 9
 	
 	Escribir "Datos guardados. Hasta luego."
 FinAlgoritmo
